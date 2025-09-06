@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Глеб Родиков — Визитка ТОП‑ИТ</title>
+    <style>
+      :root{
+        --background: 225 36% 7%;
+        --foreground: 220 15% 96%;
+        --card: 225 32% 9%;
+        --primary: 231 60% 55%;
+        --secondary: 228 24% 14%;
+        --muted: 229 20% 16%;
+        --accent: 260 30% 46%;
+        --border: 228 22% 22%;
+      }
+      html{color-scheme:dark;scroll-behavior:smooth}
+      body{margin:0;font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";background:hsl(var(--background));color:hsl(var(--foreground))}
+      .container{max-width:1000px;margin:0 auto;padding:0 16px}
+      header{position:sticky;top:0;background:rgba(0,0,0,.4);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid hsl(var(--border));z-index:10}
+      .nav{display:flex;align-items:center;justify-content:space-between;height:56px}
+      .brand{font-weight:700}
+      .nav a{color:hsl(var(--foreground));text-decoration:none;margin-left:12px;padding:8px 10px;border-radius:8px}
+      .nav a:hover{background:hsl(var(--secondary))}
+      .hero{padding:40px 0}
+      .hero-inner{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+      .avatar{width:160px;height:160px;border-radius:9999px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,hsl(var(--primary)),hsl(var(--accent)));border:2px solid color-mix(in oklab, hsl(var(--primary)) 40%, transparent)}
+      .avatar img{width:100%;height:100%;object-fit:cover}
+      h1{font-size:28px;margin:0}
+      .muted{color:hsl(var(--foreground)/.7)}
+      .btn{display:inline-block;background:hsl(var(--primary));color:#fff;border:none;border-radius:10px;padding:12px 16px;margin-right:8px;text-decoration:none}
+      .btn.secondary{background:hsl(var(--secondary))}
+      section{padding:28px 0}
+      .card{background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:14px;padding:16px}
+      .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .list{padding-left:18px}
+      .badge{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:9999px;background:hsl(var(--secondary));margin-right:8px}
+      .collage img{width:100%;height:100%;object-fit:cover}
+      .footer{padding:36px 0;color:hsl(var(--foreground)/.6);text-align:center}
+      .contact-grid{display:grid;gap:12px}
+      @media(min-width:640px){.contact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+      .contact-btn{display:flex;align-items:center;justify-content:center;height:48px;border-radius:10px;background:hsl(var(--secondary));color:hsl(var(--foreground));text-decoration:none}
+      .copy{cursor:pointer}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">Визитка ТОП‑ИТ</div>
+        <nav>
+          <a href="#about">О себе</a>
+          <a href="#motivation">Мотивация</a>
+          <a href="#portfolio">Портфолио</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-inner">
+          <div style="flex:1 1 300px;min-width:260px">
+            <h1>Глеб Родиков</h1>
+            <p class="muted" style="margin-top:8px">Студент первого курса • Программная инженерия</p>
+            <div style="margin-top:16px">
+              <a class="btn" href="#about">О себе</a>
+              <a class="btn secondary" href="#motivation">Мотивация</a>
+              <a class="btn secondary" href="#portfolio">Портфолио</a>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/profile_photo.jpg" alt="Профиль"/></div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h2>О себе</h2>
+          <div>
+            <p><span class="badge">1</span>Меня зовут Глеб, мне 18 лет, студент группы 8К51 . Я коммуникабельный и амбициозный человек, люблю работать в команде и справляться с трудными задачами.</p><p><span class="badge">2</span>Сдавал четыре предмета на ЕГЭ (физика и информатика) и получил хорошие результаты - 321 балл в сумме. Постоянно изучаю что-то новое и не стою на месте.</p><p><span class="badge">3</span>Уже семь лет занимаюсь смешанными единоборствами (ММА). Люблю читать книги и вести активный образ жизни.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="motivation">
+        <div class="card">
+          <h2>Мотивационное письмо</h2>
+          <p class="muted">Ответы на два вопроса</p>
+          <div style="margin-top:12px">
+            <h3>Почему на программу ТОП‑ИТ должны взять именно вас?</h3>
+            <p>С 7-ого класса я серьёзно начал увлекаться программированием, изучал основы Python на онлайн-курсах, участвовал в профильных мероприятиях вроде форума «Город IT». Я получил высокие баллы по информатике в школе в 9-ом классе и успешно сдал ЕГЭ по информатике. Интерес и моё желание — мои главные проводники в этой сфере, потому что имею не так много знаний в языках программирования, хотелось изучить больше материала (например JavaScript и С++, а также подтянуть знания английского языка); имею большое желание изучать как можно больше связанного с IT.</p>
+            <hr style="border:0;border-top:1px solid hsl(var(--border));margin:16px 0"/>
+            <h3>Каким вы видите своё будущее в сфере ИТ?</h3>
+            <p>В сфере IT я вижу своё будущее как путь постоянного профессионального, а главное личностного роста, совершенствование навыков языков программирования, которые позволят вносить вклад не только в ИТ‑индустрию, но и в российскую инженерию. Хочу стать частью большой команды, которая решает сложные задачи будущего!</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="card">
+          <h2>Опыт и портфолио 2023–2025</h2>
+          <p class="muted">Достижения и коллаж дипломов</p>
+          <ul class="list">
+            <li>Диплом II степени</li><li>Всероссийская дистанционная олимпиада по цифровой грамотности</li><li>Сертификат участия</li><li>Курс &quot;Поколение Python&quot; для начинающих</li><li>Сертификат участника</li><li>Городской интеллектуальный марафон &quot;Локомотив знаний&quot;</li><li>Сертификат завершения курса</li><li>&quot;Поколение Python&quot;: курс для начинающих (результат 74%)</li>
+          </ul>
+          <div class="grid-2 collage" style="margin-top:12px">
+            <a href="assets/diplomas/diploma-1.png" target="_blank" rel="noreferrer" style="display:block;aspect-ratio:1/1;overflow:hidden;border-radius:10px;border:1px solid hsl(var(--border))"><img src="assets/diplomas/diploma-1.png" alt="Диплом 1"/></a><a href="assets/diplomas/diploma-2.png" target="_blank" rel="noreferrer" style="display:block;aspect-ratio:1/1;overflow:hidden;border-radius:10px;border:1px solid hsl(var(--border))"><img src="assets/diplomas/diploma-2.png" alt="Диплом 2"/></a><a href="assets/diplomas/diploma-3.png" target="_blank" rel="noreferrer" style="display:block;aspect-ratio:1/1;overflow:hidden;border-radius:10px;border:1px solid hsl(var(--border))"><img src="assets/diplomas/diploma-3.png" alt="Диплом 3"/></a><a href="assets/diplomas/diploma-4.png" target="_blank" rel="noreferrer" style="display:block;aspect-ratio:1/1;overflow:hidden;border-radius:10px;border:1px solid hsl(var(--border))"><img src="assets/diplomas/diploma-4.png" alt="Диплом 4"/></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <div class="card">
+          <h2>Контакты</h2>
+          <div class="contact-grid">
+            <a class="contact-btn" href="https://t.me/vivennsss" target="_blank" rel="noreferrer">Telegram</a>
+            <a class="contact-btn" href="https://github.com/gorrrr1" target="_blank" rel="noreferrer">GitHub</a>
+            <button class="contact-btn copy" id="copyEmail" >Скопировать email</button>
+          </div>
+          <p class="muted" style="margin-top:8px">glebnamasse@gmail.com</p>
+        </div>
+      </section>
+
+      <div class="footer">Сайт для конкурса ТОП‑ИТ • Экспорт для GitHub Pages</div>
+    </main>
+
+    <script>
+      (function(){
+        var btn = document.getElementById('copyEmail');
+        if(!btn) return;
+        btn.addEventListener('click', async function(){
+          var email = "glebnamasse@gmail.com";
+          if(!email) return;
+          try{
+            var ta = document.createElement('textarea');
+            ta.value = email;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+            btn.textContent = 'Скопировано';
+            setTimeout(function(){btn.textContent='Скопировать email'}, 1500);
+          }catch(e){ btn.textContent = 'Не удалось'; setTimeout(function(){btn.textContent='Скопировать email'}, 1500); }
+        });
+      })();
+    </script>
+  </body>
+</html>
